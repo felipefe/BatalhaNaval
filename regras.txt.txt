@@ -1,0 +1,19 @@
+Batalha Naval - Jogo
+
+
+Jogador 1 ( Você ) 
+
+Jogador 2 (Computador)
+
+Definir escolha de Altura e comprimento do tabuleiro (Max 9 posições limitada pelo programa)
+
+Definir Quantidade de navios Com valor maximo definido pelo sistema de 20% do Tabuleiro.
+
+N - Meus Navios
+
+X - Tiro Errou o navio
+
+A - Tiro Acertou um Navio
+
+
+O Jogo acaba quando um dos lados acerta todos os navios.
