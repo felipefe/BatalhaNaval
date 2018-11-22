@@ -8,11 +8,19 @@ import java.util.Scanner;
  */
 public class BatalhaNaval {
 
+    /**
+     *
+     * Variaveis Globais do navio.
+     */
     public static final int VAZIO = 0;
     public static final int NAVIO = 1;
     public static final int ERROU_TIRO = 2;
     public static final int ACERTOU_TIRO = 3;
 
+    /**
+     * Variaveis globais do Tabuleiro.
+     *
+     */
     public static final int POSICAO_X = 0;
     public static final int POSICAO_Y = 1;
 
@@ -22,7 +30,7 @@ public class BatalhaNaval {
     public static Scanner input = new Scanner(System.in);
     public static int naviosJogador1, naviosJogador2;
 
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws Exception {
         ManterBatalhaNegocio.obterNomesDosJogadores();
         ManterBatalhaNegocio.obterTamanhoDosTabuleiros();
         ManterBatalhaNegocio.calcularQuantidadeMaximaDeNaviosNoJogo();
@@ -32,14 +40,11 @@ public class BatalhaNaval {
         ManterBatalhaNegocio.inserirOsNaviosNosTabuleirosDosJogadores();
         boolean jogoAtivo = true;
         ManterBatalhaNegocio.jogandoJogo(jogoAtivo);
-        
+
         ManterBatalhaNegocio.exibirTabuleirosDosJogadores();
         System.out.println("CLASSIFICACAO POR NUMERO DE TENTATIVAS!");
         ManterBatalhaNegocio.exibirResultado();
         input.close();
-        
-        
-        
 
     }
 
