@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                sh 'javac -d bin /src/br/com/batalhanaval/BatalhaNaval.java' 
+                sh 'javac -d bin ./src/br/com/batalhanaval/BatalhaNaval.java' 
             }
         }
     }
